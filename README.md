@@ -1,3 +1,3 @@
 # trainee
 trainee
-Only change the SonnectionString in Webconfig to perform data persistence.
+Only change the ConnectionString in Webconfig to perform data persistence.
