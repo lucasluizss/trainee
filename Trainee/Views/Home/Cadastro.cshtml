@@ -1,0 +1,162 @@
+﻿@model Trainee.Models.cadastro
+
+@{
+    ViewBag.Title = "Cadastro";
+}
+
+<h2>Cadastro</h2>
+
+<div class="form-horizontal">
+    <hr />
+    <div class="form-group">
+        <label class="control-label col-md-2">RA:</label>
+        <div class="col-md-10">
+            <input type="text" id="IdRA" class="form-control" placeholder="Ex: 0012345" autofocus/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Nome:</label>
+        <div class="col-md-10">
+            <input type="text" id="IdNome" class="form-control" placeholder="Digite seu nome e sobrenome..."/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Email:</label>
+        <div class="col-md-10">
+            <input type="email" id="IdEmail" class="form-control" placeholder="Digite seu email..."/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Data de Nascimento:</label>
+        <div class="col-md-10">
+            <input type="text" id="IdDataNasc" class="form-control"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Telefone:</label>
+        <div class="col-md-10">
+            <input type="text" id="IdTelefone" class="form-control" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Curso:</label>
+        <div class="col-md-10">
+            <select id="IdCurso" name="Curso" class="form-control">
+                <option value="0">Selecione...</option>
+                <option value="Ciência da Computação">Ciência da Computação</option>
+                <option value="Análise e Desenvolvimento de Sistemas">Análise e Desenvolvimento de Sistemas</option>
+                <option value="Engenharia da Computação">Engenharia da Computação</option>
+                <option value="Redes de Computadores">Redes de Computadores</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Semestre:</label>
+        <div class="col-md-10">
+            <select id="IdSemestre" name="Semestre" class="form-control">
+                <option value="0">Selecione...</option>
+                <option value="1">1º Semestre</option>
+                <option value="2">2º Semestre</option>
+                <option value="3">3º Semestre</option>
+                <option value="4">4º Semestre</option>
+                <option value="5">5º Semestre</option>
+                <option value="6">6º Semestre</option>
+                <option value="7">7º Semestre</option>
+                <option value="8">8º Semestre</option>
+                <option value="9">9º Semestre</option>
+                <option value="10">10º Semestre</option>
+            </select>
+
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">CEP:</label>
+        <div class="col-md-10">
+            <input type="text" id="IdCEP" class="form-control" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Endereço:</label>
+        <div class="col-md-10">
+            <input type="text" id="IdEndereco" class="form-control" placeholder="Digite seu endereço..."/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Cidade:</label>
+        <div class="col-md-10">
+            <input type="text" id="IdCidade" class="form-control" placeholder="Digite a cidade onde mora..."/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Estado:</label>
+        <div class="col-md-10">
+            <select id="IdEstado" class="form-control">
+                <option value="0">Selecione</option>
+                <option>SP</option>
+                <option>AC</option>
+                <option>AL</option>
+                <option>AP</option>
+                <option>AM</option>
+                <option>BA</option>
+                <option>CE</option>
+                <option>DF</option>
+                <option>ES</option>
+                <option>GO</option>
+                <option>MA</option>
+                <option>MT</option>
+                <option>MS</option>
+                <option>MG</option>
+                <option>PA</option>
+                <option>PB</option>
+                <option>PR</option>
+                <option>PE</option>
+                <option>PI</option>
+                <option>RJ</option>
+                <option>RN</option>
+                <option>RS</option>
+                <option>RO</option>
+                <option>RR</option>
+                <option>SC</option>
+                <option>SE</option>
+                <option>TO</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Sexo:</label>
+        <div class="col-md-10">
+            <input type="radio" class="radio-inline" name="Sexo" value="M"><label>Masculino </label>
+            <input type="radio" class="radio-inline" name="Sexo" value="F"><label>Feminino </label>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Aluno Interno:</label>
+        <div class="col-md-10 checkbox-inline">
+            <input class="form-check-input" type="checkbox" name="Interno" value="S">
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="button" value="Enviar" id="IdEnviar" class="btn btn-default" />
+        </div>
+    </div>
+</div>
+
+<script src="~/Scripts/Cadastro.js"></script>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
